@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django_filters',
     'empresa',
     'rest_framework_swagger',
+    'django_extensions',
 ]
 
 

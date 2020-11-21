@@ -41,6 +41,7 @@ urlpatterns = [
   url(r'^onibus_detail/(?P<pk>[0-9]+)/$', onibus_detail.as_view(), name=onibus_detail.name),
   url(r'^garagens/$', garagens_list.as_view(), name=garagens_list.name),
   url(r'^garagem/(?P<pk>[0-9]+)/$', garagens_detail.as_view(), name=garagens_detail.name),
+  url(r'^token-personal/$', CustomAuthToken.as_view()),
   url(r'^swagger/$', schema_view, name='swagger'),
   url(r'^token/$', rest_framework_views.obtain_auth_token, name='api-token')
 ]
